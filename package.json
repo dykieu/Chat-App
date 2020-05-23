@@ -1,0 +1,25 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "Chatting application",
+  "main": "index.js",
+  "scripts": {
+    "app": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dykieu/Chat-App.git"
+  },
+  "author": "Dylan Kieu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dykieu/Chat-App/issues"
+  },
+  "homepage": "https://github.com/dykieu/Chat-App#readme",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
