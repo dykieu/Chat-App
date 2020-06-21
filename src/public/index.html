@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap">
+
+	<title>Real Time Chat Room</title>
+</head>
+<body>
+	<div class="containerMain">
+		<header class="header">
+			<h1>Real time chat</h1>
+		</header>
+		<main class="main">
+			<form action="chatroom.html">
+				<div class="form-control">
+					<label for="user">Name</label>
+					<input type="text" name="name" id="name" placeholder="Enter a name" required>
+				</div>
+				<div class="form-control">
+					<label for="room">Room</label>
+					<select name="room" id="room">
+						<option value="Apple">Apple</option>
+						<option value="Peach">Peach</option>
+						<option value="Mango">Mango</option>
+					</select>
+				</div>
+				<button type="submit" class="btn">Join!</button>
+			</form>
+		</main>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha256-ijqLssetA1NMNjZ+w1zaUafQQLm4IW5OoM8O+4tatME=" crossorigin="anonymous"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

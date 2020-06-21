@@ -4,7 +4,8 @@
   "description": "Chatting application",
   "main": "index.js",
   "scripts": {
-    "app": "nodemon app.js"
+    "app": "node app.js",
+    "devStart": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/dykieu/Chat-App#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {

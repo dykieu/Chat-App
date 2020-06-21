@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap">
+	
+	<title>Real time Chat Room</title>
+</head>
+<body>
+	<div class="chat">
+		<header class="chatHeader">
+			<h1>Chat Room</h1>
+			<span>
+				<a href="index.html" class="closeBtn"> X </a>
+			</span>
+		</header>
+		<main class="chatBody-container">
+			<div class="sidebar">
+				<h3>Room: </h3>
+				<h4 id="roomName"></h4>
+				<h3> Users: </h3>
+				<ul id="userNames">
+				</ul>
+			</div>
+			<div class="chatMsg">
+			</div>
+		</main>
+		<div class="footer">
+			<form id="send">
+				<input type="text" id="msgInput" placeholder="Enter a message" required>
+				<button type="submit" id="send-btn">Send</button>
+			</form>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha256-ijqLssetA1NMNjZ+w1zaUafQQLm4IW5OoM8O+4tatME=" crossorigin="anonymous"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
